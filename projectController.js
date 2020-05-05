@@ -39,16 +39,14 @@ exports.new = function (req, res) {
   project.technologies = req.body.technologies;
   // save the project and check for errors
   project.save(function (err) {
-    // if (err)
-    //     res.json(err);
+    if (err) res.json(err);
 
-console.log(req.body)
-    projectCollection.insertOne(req.body)
-    .then(result => {
-      console.log(result)
-    })
-    .catch(error => console.error(error))
-
+    projectCollection
+      .insertOne(req.body)
+      .then((result) => {
+        // console.log(result);
+      })
+      .catch((error) => console.error(error));
 
     res.json({
       message: "New project created!",

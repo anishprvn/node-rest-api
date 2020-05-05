@@ -21,10 +21,10 @@ var projectController = require('./projectController');
 router.route('/project')
     .get(projectController.index)
     .post(projectController.new);
-// router.route('/project/:project_id')
-//     .get(projectController.view)
-//     .patch(projectController.update)
-//     .put(projectController.update)
-//     .delete(projectController.delete);
+router.route('/project/:project_id')
+    .get(projectController.view)
+    .patch(projectController.update)
+    .put(projectController.update)
+    .delete(projectController.delete);
 // Export API routes
 module.exports = router;
