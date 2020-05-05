@@ -28,7 +28,10 @@ Nodemon
 
 A step by step series of examples that tell you how to get a development env running.
 
+```
 npm install
+```
+Goto http://localhost:8080/
 
 Start the application by
 ```
