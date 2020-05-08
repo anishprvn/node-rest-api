@@ -9,7 +9,9 @@
 
 ## About <a name = "about"></a>
 
-Node.js Application built using Express.js and database as MongoDB
+Node.js Application built using Express.js and database as MongoDB. 
+Swagger functionality to view and understand API end points.
+Implemented Swagger using [swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express) and [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)
 
 ## Getting Started <a name = "getting_started"></a>
 
