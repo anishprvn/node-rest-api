@@ -32,8 +32,8 @@ const options = {
 };
 
 const specs = swaggerJsdoc(options);
-const util = require("util");
+// const util = require("util");
 
-console.log(util.inspect(specs, false, null, true /* enable colors */));
+// console.log(util.inspect(specs, false, null, true /* enable colors */));
 
 module.exports = specs;
